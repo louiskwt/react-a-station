@@ -8,7 +8,10 @@ const TopBar = () => {
 	return (
 		<>
 			<Navbar bg='dark' variant='dark' expand='lg'>
-				<Navbar.Brand href='#Home'>A-station</Navbar.Brand>
+				<Link to='/'>
+					<Navbar.Brand>A-station</Navbar.Brand>
+				</Link>
+
 				<Navbar.Toggle aria-controls='basic-navbar-nav' />
 				<Navbar.Collapse id='basic-navbar-nav'>
 					<Nav className='mr-auto'>
