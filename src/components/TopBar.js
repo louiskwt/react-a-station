@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button';
 const TopBar = () => {
 	return (
 		<>
-			<Navbar bg='dark' variant='dark'>
+			<Navbar bg='dark' variant='dark' expand='lg'>
 				<Navbar.Brand href='#Home'>A-station</Navbar.Brand>
 				<Navbar.Toggle aria-controls='basic-navbar-nav' />
 				<Navbar.Collapse id='basic-navbar-nav'>
