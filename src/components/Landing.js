@@ -16,8 +16,10 @@ const Landing = () => {
 						</Col>
 					</Row>
 					<Row>
-						<Col md={{ span: 6, offset: 3 }}>
-							<h3 className='text-center'>A-station</h3>
+						<Col md={{ span: 6, offset: 3 }} className='mt-3'>
+							<h5 className='text-center'>
+								一個提供線上DSE練習的學習平台
+							</h5>
 						</Col>
 					</Row>
 					<Row>
@@ -27,11 +29,9 @@ const Landing = () => {
 									variant='primary'
 									className='mr-4'
 									size='lg'
+									block
 								>
 									開始學習
-								</Button>
-								<Button variant='secondary' size='lg'>
-									了解更多
 								</Button>
 							</div>
 						</Col>
