@@ -16,10 +16,14 @@ const TopBar = () => {
 				<Navbar.Collapse id='basic-navbar-nav'>
 					<Nav className='mr-auto'>
 						<Link to='/reading'>
-							<Nav.Link>閱讀</Nav.Link>
+							<span className='nav-link' role='button'>
+								閱讀
+							</span>
 						</Link>
 						<Link to='/writing'>
-							<Nav.Link>寫作</Nav.Link>
+							<span className='nav-link' role='button'>
+								寫作
+							</span>
 						</Link>
 					</Nav>
 					<div className='inline'>
