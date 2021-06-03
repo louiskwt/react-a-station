@@ -4,6 +4,7 @@ import TopBar from './components/TopBar';
 import Landing from './components/Landing';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Login from './components/Login';
+import Reading from './components/Reading';
 
 function App() {
 	return (
@@ -13,6 +14,7 @@ function App() {
 				<Switch>
 					<Route exact path='/' component={Landing} />
 					<Route path='/login' component={Login} />
+					<Route path='/reading' component={Reading} />
 				</Switch>
 			</Router>
 		</div>
