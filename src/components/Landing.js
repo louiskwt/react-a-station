@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
 
 const Landing = () => {
 	return (
@@ -25,14 +26,16 @@ const Landing = () => {
 					<Row>
 						<Col md={{ span: 6, offset: 3 }}>
 							<div className='text-center mt-5'>
-								<Button
-									variant='primary'
-									className='mr-4'
-									size='lg'
-									block
-								>
-									開始學習
-								</Button>
+								<Link to='/reading'>
+									<Button
+										variant='primary'
+										className='mr-4'
+										size='lg'
+										block
+									>
+										開始學習
+									</Button>
+								</Link>
 							</div>
 						</Col>
 					</Row>

@@ -15,8 +15,12 @@ const TopBar = () => {
 				<Navbar.Toggle aria-controls='basic-navbar-nav' />
 				<Navbar.Collapse id='basic-navbar-nav'>
 					<Nav className='mr-auto'>
-						<Nav.Link>寫作</Nav.Link>
-						<Nav.Link>閱讀</Nav.Link>
+						<Link to='/reading'>
+							<Nav.Link>閱讀</Nav.Link>
+						</Link>
+						<Link to='/writing'>
+							<Nav.Link>寫作</Nav.Link>
+						</Link>
 					</Nav>
 					<div className='inline'>
 						<Link to='/login'>
