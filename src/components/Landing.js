@@ -31,9 +31,13 @@ const Landing = () => {
 										variant='primary'
 										className='mr-4'
 										size='lg'
-										block
 									>
-										開始學習
+										練Reading
+									</Button>
+								</Link>
+								<Link to='/writing'>
+									<Button variant='info' size='lg'>
+										練Writing
 									</Button>
 								</Link>
 							</div>
