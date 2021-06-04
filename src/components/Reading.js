@@ -31,7 +31,11 @@ const Reading = () => {
 							</Card.Header>
 							<Accordion.Collapse eventKey='0'>
 								<ListGroup variant='flush'>
-									<ListGroup.Item>Ex1 : </ListGroup.Item>
+									{docs.map((doc) => (
+										<ListGroup.Item>
+											Ex : {doc.title}
+										</ListGroup.Item>
+									))}
 								</ListGroup>
 							</Accordion.Collapse>
 						</Card>
