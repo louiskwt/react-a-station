@@ -3,6 +3,8 @@ import Container from 'react-bootstrap/Container';
 import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import ListGroup from 'react-bootstrap/ListGroup';
+import { FaChevronCircleDown } from 'react-icons/fa';
 
 const Writing = () => {
 	return (
@@ -14,14 +16,16 @@ const Writing = () => {
 					<Card.Header>
 						<Accordion.Toggle
 							as={Button}
-							variant='link'
+							variant='light'
 							eventKey='0'
 						>
-							Expand
+							<FaChevronCircleDown size={28} />
 						</Accordion.Toggle>
 					</Card.Header>
 					<Accordion.Collapse eventKey='0'>
-						<Card.Body>Hello! Writing EX</Card.Body>
+						<ListGroup variant='flush'>
+							<ListGroup.Item>Ex1 : </ListGroup.Item>
+						</ListGroup>
 					</Accordion.Collapse>
 				</Card>
 			</Accordion>

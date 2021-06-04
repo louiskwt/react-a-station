@@ -5,16 +5,12 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import ControlBar from './ControlBar';
+import ListGroup from 'react-bootstrap/ListGroup';
+import { FaChevronCircleDown } from 'react-icons/fa';
 
 const Reading = () => {
 	return (
-		<Container fluid>
-			<Row>
-				<Col>
-					<ControlBar />
-				</Col>
-			</Row>
+		<Container>
 			<Row>
 				<Col>
 					<h1>DSE Reading</h1>
@@ -24,14 +20,16 @@ const Reading = () => {
 							<Card.Header>
 								<Accordion.Toggle
 									as={Button}
-									variant='link'
+									variant='light'
 									eventKey='0'
 								>
-									Expand
+									<FaChevronCircleDown size={28} />
 								</Accordion.Toggle>
 							</Card.Header>
 							<Accordion.Collapse eventKey='0'>
-								<Card.Body>Hello!</Card.Body>
+								<ListGroup variant='flush'>
+									<ListGroup.Item>Ex1 : </ListGroup.Item>
+								</ListGroup>
 							</Accordion.Collapse>
 						</Card>
 					</Accordion>
