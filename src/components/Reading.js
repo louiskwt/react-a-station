@@ -7,8 +7,11 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { FaChevronCircleDown } from 'react-icons/fa';
+import useFirestore from '../hooks/useFirestore';
 
 const Reading = () => {
+	const { docs } = useFirestore('reading');
+	console.log(docs);
 	return (
 		<Container>
 			<Row>
