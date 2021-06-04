@@ -3,28 +3,40 @@ import Container from 'react-bootstrap/Container';
 import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import ControlBar from './ControlBar';
 
 const Reading = () => {
 	return (
-		<Container>
-			<h1>DSE Reading Exercise</h1>
-			<p>DSE </p>
-			<Accordion defaultActiveKey='0'>
-				<Card>
-					<Card.Header>
-						<Accordion.Toggle
-							as={Button}
-							variant='link'
-							eventKey='0'
-						>
-							Expand
-						</Accordion.Toggle>
-					</Card.Header>
-					<Accordion.Collapse eventKey='0'>
-						<Card.Body>Hello!</Card.Body>
-					</Accordion.Collapse>
-				</Card>
-			</Accordion>
+		<Container fluid>
+			<Row>
+				<Col>
+					<ControlBar />
+				</Col>
+			</Row>
+			<Row>
+				<Col>
+					<h1>DSE Reading</h1>
+					<p>DSE </p>
+					<Accordion defaultActiveKey='0'>
+						<Card>
+							<Card.Header>
+								<Accordion.Toggle
+									as={Button}
+									variant='link'
+									eventKey='0'
+								>
+									Expand
+								</Accordion.Toggle>
+							</Card.Header>
+							<Accordion.Collapse eventKey='0'>
+								<Card.Body>Hello!</Card.Body>
+							</Accordion.Collapse>
+						</Card>
+					</Accordion>
+				</Col>
+			</Row>
 		</Container>
 	);
 };
