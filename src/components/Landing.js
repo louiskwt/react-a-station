@@ -50,28 +50,21 @@ const Landing = () => {
 					<Col md='4'>
 						<h2>線上DSE練習</h2>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Ex ut inventore facere sit placeat est eius
-							sint dolore ducimus id soluta necessitatibus cum,
-							nihil, ullam corporis ad libero doloremque tempore.
+							一個為中學生而設的線上DSE英文練習網站。目前平台仍在起步階段，所有練習會免費開放，而且會持續加入更多練習，如果你想支持這個平台的發展同埋保持免費開放的狀態，可以考慮成為我的Pateron
+							(每月只需$5.00 USD)。
 						</p>
 					</Col>
 					<Col md='4'>
-						<h2>線上DSE練習</h2>
+						<h2>針對性練習</h2>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Ex ut inventore facere sit placeat est eius
-							sint dolore ducimus id soluta necessitatibus cum,
-							nihil, ullam corporis ad libero doloremque tempore.
+							現時本站提供DSE Reading 同
+							Writing嘅練習。所有練習都是集中針對某一項題型，讓你可以專注去改善你的弱點同強化你專長的題型。更多新的練習仍然在開發，日後會加入更多練習，敬請期待
 						</p>
 					</Col>
 					<Col md='4'>
-						<h2>線上DSE練習</h2>
+						<h2>需要你的支持</h2>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Ex ut inventore facere sit placeat est eius
-							sint dolore ducimus id soluta necessitatibus cum,
-							nihil, ullam corporis ad libero doloremque tempore.
+							由於目前本站只有我一個人在經營，更新進度以及開發速度都是相對緩慢，因此我希望可以招募義工同有興趣參與網站開發或內容創作的學生去加入我的團隊。你不需要有任何技能，你只需要有心去學。
 						</p>
 					</Col>
 				</Row>
