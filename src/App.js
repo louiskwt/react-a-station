@@ -1,7 +1,5 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import './assets/vendor/nucleo/css/nucleo.css';
-// import './assets/scss/argon-design-system.scss';
 import TopBar from './components/TopBar';
 import Landing from './components/Landing';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
