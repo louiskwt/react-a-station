@@ -8,6 +8,7 @@ import Row from 'react-bootstrap/Row';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { FaChevronCircleDown } from 'react-icons/fa';
 import useFirestore from '../hooks/useFirestore';
+import { Link } from 'react-router-dom';
 
 const Reading = () => {
 	const { docs } = useFirestore('reading');
@@ -32,9 +33,11 @@ const Reading = () => {
 							<Accordion.Collapse eventKey='0'>
 								<ListGroup variant='flush'>
 									{docs.map((doc) => (
-										<ListGroup.Item>
-											Ex : {doc.title}
-										</ListGroup.Item>
+										<Link to='/reading/123' key={doc.id}>
+											<ListGroup.Item action>
+												Ex : {doc.title}
+											</ListGroup.Item>
+										</Link>
 									))}
 								</ListGroup>
 							</Accordion.Collapse>
