@@ -21,4 +21,21 @@ const useFirestore = (collection) => {
 	return { docs };
 };
 
-export default useFirestore;
+const useReading = (title) => {
+	const [questions, setQuestions] = useState({});
+
+	useEffect(() => {
+		const unsub = projectFirestore
+			.collection('reading')
+			.where('title', '==', title)
+			.onSnapshot((snap) => {
+				setQuestions(snap.docs[0].data());
+			});
+		// cleanup function
+		return () => unsub();
+	}, [title]);
+
+	return { questions };
+};
+
+export { useFirestore, useReading };

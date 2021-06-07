@@ -5,7 +5,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { FaChevronCircleDown } from 'react-icons/fa';
-import useFirestore from '../hooks/useFirestore';
+import { useFirestore } from '../hooks/useFirestore';
 import { Link } from 'react-router-dom';
 
 const Writing = () => {
