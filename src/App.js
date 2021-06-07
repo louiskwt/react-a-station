@@ -1,13 +1,13 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import TopBar from './components/TopBar';
-import Landing from './components/Landing';
+import Landing from './pages/Landing';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Login from './components/Login';
-import Reading from './components/Reading';
-import Writing from './components/Writing';
-import ReadingEx from './components/ReadingEx';
-import WritingEx from './components/WritingEx';
+import Login from './pages/Login';
+import Reading from './pages/Reading';
+import Writing from './pages/Writing';
+import ReadingEx from './pages/ReadingEx';
+import WritingEx from './pages/WritingEx';
 
 function App() {
 	return (
