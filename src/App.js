@@ -6,6 +6,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Login from './components/Login';
 import Reading from './components/Reading';
 import Writing from './components/Writing';
+import ReadingEx from './components/ReadingEx';
+import WritingEx from './components/WritingEx';
 
 function App() {
 	return (
@@ -15,8 +17,10 @@ function App() {
 				<Switch>
 					<Route exact path='/' component={Landing} />
 					<Route path='/login' component={Login} />
-					<Route path='/reading' component={Reading} />
-					<Route path='/writing' component={Writing} />
+					<Route exact path='/reading' component={Reading} />
+					<Route exact path='/writing' component={Writing} />
+					<Route path='/reading/:id' component={ReadingEx} />
+					<Route path='/writing/:id' component={WritingEx} />
 				</Switch>
 			</Router>
 		</div>
