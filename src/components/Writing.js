@@ -5,8 +5,12 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { FaChevronCircleDown } from 'react-icons/fa';
+import useFirestore from '../hooks/useFirestore';
+import { Link } from 'react-router-dom';
 
 const Writing = () => {
+	const { docs } = useFirestore('writing');
+	console.log(docs);
 	return (
 		<Container>
 			<h1>DSE Writing Exercises</h1>
@@ -24,7 +28,13 @@ const Writing = () => {
 					</Card.Header>
 					<Accordion.Collapse eventKey='0'>
 						<ListGroup variant='flush'>
-							<ListGroup.Item>Ex1 : </ListGroup.Item>
+							{docs.map((doc) => (
+								<Link to={`/writing/${doc.title}`} key={doc.id}>
+									<ListGroup.Item action>
+										Ex : {doc.title}
+									</ListGroup.Item>
+								</Link>
+							))}
 						</ListGroup>
 					</Accordion.Collapse>
 				</Card>

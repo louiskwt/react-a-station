@@ -33,7 +33,10 @@ const Reading = () => {
 							<Accordion.Collapse eventKey='0'>
 								<ListGroup variant='flush'>
 									{docs.map((doc) => (
-										<Link to='/reading/123' key={doc.id}>
+										<Link
+											to={`/reading/${doc.title}`}
+											key={doc.id}
+										>
 											<ListGroup.Item action>
 												Ex : {doc.title}
 											</ListGroup.Item>
