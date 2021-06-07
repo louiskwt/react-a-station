@@ -28,7 +28,7 @@ const TopBar = () => {
 					</Nav>
 					<div className='inline'>
 						<Link to='/login'>
-							<Button variant='success'>登入</Button>
+							<Button variant='outline-success'>登入</Button>
 						</Link>
 					</div>
 				</Navbar.Collapse>
